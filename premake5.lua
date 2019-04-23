@@ -1,9 +1,9 @@
-project "GLFW"
+project "GLFW"  
     kind "StaticLib"
     language "C"
 
-    targetdir ("build/bin/" .. buildDir .. "/%{prj.name}")
-    objdir ("build/bin-int/" .. buildDir .. "/%{prj.name}")
+    targetdir ("build/bin/%{prj.name}/" .. buildDir)
+    objdir ("build/bin/%{prj.name}/" .. buildDir)
 
     files
     {
@@ -40,7 +40,7 @@ project "GLFW"
             "_GLFW_WIN32"
         }
 
-    filter "system:macOS"
+    filter "system:macosx"
         systemversion "latest"
         staticruntime "on"
 
