@@ -3207,9 +3207,9 @@ GLFWAPI void glfwShowWindow(GLFWwindow* window);
  */
 GLFWAPI void glfwHideWindow(GLFWwindow* window);
 
-/*! @brief Brings the specified window to front and sets input focus.
+/*! @brief Brings the specified window to Front and sets input focus.
  *
- *  This function brings the specified window to front and sets input focus.
+ *  This function brings the specified window to Front and sets input focus.
  *  The window should already be visible and not iconified.
  *
  *  By default, both windowed and full screen mode windows are focused when
@@ -3233,7 +3233,7 @@ GLFWAPI void glfwHideWindow(GLFWwindow* window);
  *  GLFW_PLATFORM_ERROR.
  *
  *  @remark @wayland It is not possible for an application to bring its windows
- *  to front, this function will always emit @ref GLFW_PLATFORM_ERROR.
+ *  to Front, this function will always emit @ref GLFW_PLATFORM_ERROR.
  *
  *  @thread_safety This function must only be called from the main thread.
  *
@@ -5221,9 +5221,9 @@ GLFWAPI void glfwMakeContextCurrent(GLFWwindow* window);
  */
 GLFWAPI GLFWwindow* glfwGetCurrentContext(void);
 
-/*! @brief Swaps the front and back buffers of the specified window.
+/*! @brief Swaps the Front and back buffers of the specified window.
  *
- *  This function swaps the front and back buffers of the specified window when
+ *  This function swaps the Front and back buffers of the specified window when
  *  rendering with OpenGL or OpenGL ES.  If the swap interval is greater than
  *  zero, the GPU driver waits the specified number of screen updates before
  *  swapping the buffers.
